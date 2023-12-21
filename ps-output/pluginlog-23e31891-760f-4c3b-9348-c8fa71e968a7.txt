@@ -1,0 +1,134 @@
+Loading PSProperties from C:\Users\Admin\AndroidStudioProjects\MyApplication\productscience.properties
+Authenticating with PSTool
+PSTool token found in productscience.properties
+--> GET https://prod.productscience.app/api/v1/auth-check
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+--> END GET
+<-- 204 https://prod.productscience.app/api/v1/auth-check (2224ms)
+date: Fri, 15 Dec 2023 04:49:42 GMT
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+<-- END HTTP
+PSTool authentication success
+Retrieving configuration
+Probing PSLocation
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool config tag found, loading from 412575221:default
+Loading filters from spec
+Loading PSProperties from C:\Users\Admin\AndroidStudioProjects\MyApplication\productscience.properties
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Found 1 filters
+No build logs uploaded
+PSLogs >> unfilter: CacheControl$Builder onlyIfCached fqnHash=1354008497 signatureHash=null
+GRADLE VERSION 8.2
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 8.2.0
+Registering ProductScience's ClassTransform
+Using new ScopedArtifacts transform API
+Using ProductScience Plugin version 0.18.4
+Retrieving application token
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+--> POST https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app
+Content-Type: application/json; charset=UTF-8
+Content-Length: 50
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"}
+--> END POST (50-byte body)
+<-- 200 https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app (3044ms)
+date: Fri, 15 Dec 2023 04:49:53 GMT
+content-type: application/json
+content-length: 102
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"token":"t05_LjitDK2LemzwPGOuqU1APAUAIqDGlkNE039J-5ysEiZ6X_QTVIbNM8aqxoP3d5Oo8iXDyz7aXoyUaJ-iA8C4OQ"}
+<-- END HTTP (102-byte body)
+Application token successfully retrieved
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 99
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"IN_PROGRESS","eventTime":1702615792738,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"}
+--> END POST (99-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (1000ms)
+date: Fri, 15 Dec 2023 04:49:54 GMT
+content-type: application/json
+content-length: 114
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7","status":"IN_PROGRESS","dateUpdated":"2023-12-15T04:49:54.425Z"}
+<-- END HTTP (114-byte body)
+Status uploaded
+Added dependency DefaultExternalModuleDependency{group='com.productscience.transformer', name='transformer-module', version='0.18.4', configuration='default'}
+Incompatible frameCounter dependency version 5.6.0 found, replacing with version 6.0.0
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='framecounter', version='6.0.0', configuration='default'}
+Incompatible userSession dependency version 5.6.0 found, replacing with version 6.0.0
+Adding missing userSession dependencies block
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='usersession', version='6.0.0', configuration='default'}
+Added dependency DefaultExternalModuleDependency{group='androidx.lifecycle', name='lifecycle-process', version='2.5.1', configuration='default'}
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 692
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"pluginAuthenticated","eventTime":1702615781915,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"},{"name":"numberOfFilters","value":"1","eventTime":1702615787131,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"},{"name":"pluginApplied","value":"{\"pluginVersion\":\"0.18.4\"}","eventTime":1702615789522,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"},{"name":"pluginConfigured","eventTime":1702615792614,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"},{"name":"pluginConfigured","eventTime":1702615792614,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"},{"name":"pluginDependenciesResolved","eventTime":1702615793791,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"}]}
+--> END POST (692-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (1416ms)
+date: Fri, 15 Dec 2023 04:49:55 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 111
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"buildSuccess","eventTime":1702615806421,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"}]}
+--> END POST (111-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (417ms)
+date: Fri, 15 Dec 2023 04:50:07 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 95
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"SUCCESS","eventTime":1702615806852,"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7"}
+--> END POST (95-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (474ms)
+date: Fri, 15 Dec 2023 04:50:08 GMT
+content-type: application/json
+content-length: 110
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"23e31891-760f-4c3b-9348-c8fa71e968a7","status":"SUCCESS","dateUpdated":"2023-12-15T04:50:08.200Z"}
+<-- END HTTP (110-byte body)
+Status uploaded

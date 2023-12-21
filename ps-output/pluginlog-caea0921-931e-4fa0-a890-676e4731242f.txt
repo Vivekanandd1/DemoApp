@@ -1,0 +1,4 @@
+Loading PSProperties from C:\Users\Admin\AndroidStudioProjects\MyApplication\productscience.properties
+PSProperties file C:\Users\Admin\AndroidStudioProjects\MyApplication\productscience.properties does not exist
+Authenticating with PSTool
+PSToken is not set
